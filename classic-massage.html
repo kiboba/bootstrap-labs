@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu" aria-expanded="false">
+                <span class="fa fa-database"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Massage</a>
+        </div>
+        <!-- end of navbar-header -->
+
+        <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a href="treatments.html" class="drop-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Treatments<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="treatments.html">All Treatments</a></li>
+                        <li><a href="classic-massage.html">Classic Massage</a></li>
+                        <li><a href="taktil-massage.html">Taktil Massage</a></li>
+                        <li><a href="shiatsu.html">Shiatsu</a></li>
+                        <li><a href="fibro-massage.html">Fibromassage</a></li>
+                        <li><a href="energy-massage.html">Energy massage</a></li>
+                    </ul>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </div>
+        <!-- end of navbar-collapse -->
+
+    </div>
+    <!-- end of container-fluid -->
+</nav>
+
+<ol class="breadcrumb">
+    <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+    <li><a href="treatments.html">All Treatments</a></li>
+    <li class="active">Classic Massage</li>
+</ol>
+
+
+<div class="container">
+    <div class="panel panel-info">
+        <div class="row">
+            <div class="panel-body">
+                <div class="col-sm-6">
+                    <img src="images/massage.jpg" class="img-responsive" alt="klassisk massage">
+                </div>
+                <div class="col-sm-6">
+                    <div class="panel-heading">
+                        <h1 class="panel-title text-center"><strong>CLASSIC MASSAGE</strong></h1>
+                    </div>
+                    <div class="panel-body">
+                        <p class="lead text-center">Fusce justo velit, euismod ac fermentum id, maximus vitae turpis. Donec venenatis molestie ex, eu cursus tortor. Integer faucibus congue mauris, ac varius mi aliquam sit amet. Mauris nec massa interdum, tempus lectus vitae, congue lacus. Praesent ut ipsum vitae magna sodales auctor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of row -->
+    </div>
+    <!-- end of panel -->
+</div>
+<!-- end of container -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h1 class="panel-title text-center"><strong>CLASSIC MASSAGE</strong></h1>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <label class="control-label" for="name">Namn</label>                                    
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="Namn" class="form-control" id="namn" placeholder="Skriv ditt namn">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <label class="control-label" for="name">Personnr</label>                            
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="Personnr" class="form-control" id="personnr" placeholder="ÅÅMMDD-XXXX">                                    
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <label class="control-label" for="name">Mobilnr</label>                                    
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="Mobilnr" class="form-control" id="mobilnr" placeholder="Skriv ditt mobilnr">                                                             
+                            </div>
+                        </div>  
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <label class="control-label" for="name">Meddelande:</label>                                    
+                            </div>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" rows="4" id="meddelande"></textarea>                                    
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+                <div class="panel-footer">
+                        <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#boka">Boka Behandling</button>
+                </div>
+            </div>
+            <!-- end of panel col -->
+        </div>
+        <!-- end of panel row -->
+    </div>
+    <!-- end of panel -->
+</div>
+<!-- end of panel container -->
+
+
+    <!-- modal -->
+    <div class="modal fade" id="boka">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-center">Klassisk Massage</h2>
+                </div>
+                <div class="modal-body bg-danger">
+                    <p class="text-center">Vill du boka denna behandling?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Boka</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Avbryt</button>
+                </div>
+            </div>
+            <!-- end of modal-content -->
+        </div>
+        <!-- end of modal-dialog -->
+    </div>
+    <!-- end of modal -->
+           
+
+
+
+
+    <footer class="container site-footer">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="fa fa-medium" aria-hidden="true"></span>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="contact">
+                        <h4>Kontakta oss</h4>
+                        <li>Telefon: 072-455 23 44</li>
+                        <li><a href="#">Hitta hit</a> </li>
+                        <li><a href="#">Massage@gmail.com</a></li>
+                    </ul>             
+                </div>
+            </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
